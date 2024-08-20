@@ -1,7 +1,7 @@
 import "./App.css";
 import {useState} from "react";
-import ItemRow from "./ItemRow";
-import Input from "./input";
+import Input from "./Input";
+import Output from "./Output";
 
 const App = ()=>{
     // 전역변수를 state로 만들어 주어야 re rendering 된다.
@@ -59,28 +59,8 @@ const App = ()=>{
         </div>
         {/* todo 타이틀 입력 컴포넌트 위치*/}
         <Input onClickEvent={(onClickEvent)} />
-        <div className="list-body">
-          <div className="container">
-          <table className="table table-hover">
-            <thead>
-                <tr style={{textAlign:"center"}}>
-                    <th>Done</th>
-                    <th>Title</th>
-                    <th>Buttons</th>
-                </tr>
-                </thead>
-                <tbody>
-                {todoList.map((item)=> {
-                    return(<tr key={item.no}>
-                        <td colSpan={3} style={{padding:"0px"}}>
-                            <ItemRow item={item} onDoneFlag={onDoneFlag} onDelete={onDelete} onEdit={onEdit} />
-                        </td>
-                    </tr>)
-                })}
-                </tbody>
-            </table>
-          </div>
-        </div>
+        {/* todo 목록이 출력되는 컴포넌트 위치*/}
+        <Output todoList={(todoList)} onDoneFlag={(onDoneFlag)} onDelete={(onDelete)} onEdit={(onEdit)} />
     </div>);
 }
 
