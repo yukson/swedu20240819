@@ -22,11 +22,9 @@ server.on('request', function(req, res){
     
     //res.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
     res.write(html);
-    setTimeout(() => {
-        res.end();
-    }, 1000)
-    res.end();
+    //res.end();
     // res.write()는 여러번 호출 가능, res.end()는 한번만 호출해야함
     // res.end()는 문자열 데이터만 사용
     // res.send()는 수식, 객체 등을 body 화면에 바로 출력
+    res.send({name: "Hong"});
 });

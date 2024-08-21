@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>사원 관리 프로그램</h1>
+    <!--Ajax를 이요해서 서버에서 데이터를 가져와서 출력-->
+    <div>
+        이름 <input type="text" id="name"/><br />
+        부서 <input type="text" id="dept"/><br />
+        직책 <input type="text" id="grade"/><br />
+        <button class="addButton">새 사원 추가</button>
+    </div>
+    <hr />
+    <div>
+        <button>선택 삭제</button> | 검색: 
+        <select>
+            <option value="">이름</option>
+            <input class="searchContent" type="text" id="serach" />
+        </select>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th> <input type="checkbox" /> </th>
+                <th>번호</th>
+                <th>사원명</th>
+                <th>부서</th>
+                <th>직급</th>
+                <th>수정</th>
+                <th>삭제</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

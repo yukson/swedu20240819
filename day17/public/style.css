@@ -1,0 +1,22 @@
+.addButton {
+    margin: 20px 0px;
+    background-color: red;
+    color: white;
+    border: 0px;
+    padding: 8px;
+    font-size: medium;
+    border-radius: 4px;
+}
+
+select {
+    font-size: medium;
+}
+
+.searchContent {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+table {
+    border: 1px solid black;
+}
