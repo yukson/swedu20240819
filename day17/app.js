@@ -43,7 +43,6 @@ app.post("/saram", (req, res) => {
         grade: req.body.grade
     };
     saramList.push(newEmployee);
-    console.log(saramList);
     res.send(saramList);
 });
 

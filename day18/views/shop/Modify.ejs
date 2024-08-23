@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%-include('../inc/Top.ejs') %>
+    <hr />
+    <div class="container">
+        <h2>수정</h2>
+        <form action="/shop/modify" method="post">
+            <table>
+                <tr>
+                    <th>NAME</th>
+                    <td><input type="text" name="name" value=""> <%= car.name %></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                </tr>
+            </table>
+            <hr />
+            <%-include('./ShopNav.ejs')%>
+        </form>
+    </div>
+</body>
+</html>
