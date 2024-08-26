@@ -179,11 +179,6 @@ router.route("/shop/modify").get((req, res) => {
     });
 });
 
-router.route("/shop/modify").post((req, res) => {
-    console.log("POST - /shop/modify 호출");
-    res.redirect('/shop');
-});
-
 router.route("/shop/detail").get((req, res) => {
     // 쿼리로 전송된 데이터는 모두 문자열이다.
     // parseInt() 필수 "77" <-- numeric
